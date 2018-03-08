@@ -22,10 +22,13 @@ namespace movies_project
                 int i = 0;
                 foreach (SearchMovie result in results.Results)
                 {
+                 string date = "";
+                    if (result.ReleaseDate != null)
+                        date = "<font style = 'font-size:27'> ("+ result.ReleaseDate.Value.Year+") </font> ";
                     if (i < 2)
                     {
                         str1 += "<li style='margin-left:10px'><div class='col-md-3'><img src='" + "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + result.PosterPath + "' class='img-responsive' alt='Slider image " + result.Id + "' style='height: 300px;' /></div>" +
-                              "<div class='col-md-4' > <h3 style='color: #FFF;margin:10px;font-family: 'Arial';'>" + result.Title + "<font style='font-size:27'>("+ result.ReleaseDate.Value.Year+")</font></h3>" +
+                              "<div class='col-md-4' > <h3 style='color: #FFF;margin:10px;font-family: 'Arial';'>" + result.Title + date+"</h3>" +
                               "<h4 style='color: red;margin:10px;font-family: 'Arial';'>Overview</h4>" +
                               "<p style='color: #FFF;'>"+ result.Overview+"</p></div>" +
                             "<div class='button'>" +
