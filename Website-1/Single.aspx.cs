@@ -44,7 +44,14 @@ namespace movies_project
             str2 += "</P><p class='movie_option'><strong>Genres: </strong>";
             for (int i = 0; i < movie.Genres.Count; i++)
                 str2 += movie.Genres[i].Name + ", ";
-            str2 += "</P><p class='movie_option'><strong>Release date: </strong>" + movie.ReleaseDate.Value.ToString("D", CultureInfo.CreateSpecificCulture("en-US")) + "</p>";
+            try {
+                str2 += "</P><p class='movie_option'><strong>Release date: </strong>" + movie.ReleaseDate.Value.ToString("D", CultureInfo.CreateSpecificCulture("en-US")) + "</p>";
+            }
+            catch
+            {
+                str2 += "</P><p class='movie_option'><strong>Release date: </strong>" +"" + "</p>";
+
+            }
             str2 += "<p class='movie_option'><strong>Vote: </strong>" + movie.VoteAverage + "</p>";
             str2 += "<p class='movie_option'><strong>Vote Count: </strong>" + movie.VoteCount + "</p>" +
                 "<a href='" + "http://www.imdb.com/title/" + movie.ImdbId + "'>Go IMDB Link</a><br/>";
