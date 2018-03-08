@@ -28,7 +28,9 @@ namespace movies_project
                 foreach (SearchMovie result in results.Results)
                 {
 
-
+ string date = "";
+                    if (result.ReleaseDate != null)
+                        date = result.ReleaseDate.Value.ToString("D", CultureInfo.CreateSpecificCulture("en-US"));
                     if (result.PosterPath == null)
                     {
                         image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP_gfN4auNNye--K2rquUrHBCrMl4QYedWLnLT14qSdT2AWPPo";
@@ -45,7 +47,7 @@ namespace movies_project
                                    "</div>" +
                                    "<div class='movie__info'>" +
                                        "<a href='Single.aspx?movie_id=" + result.Id + "' class='movie__title'>" + result.Title + "  </a><br/>" +
-                                       "<span>Realse date: " + result.ReleaseDate.Value.ToString("D", CultureInfo.CreateSpecificCulture("en-US")) + "</span><br/>" +
+                                       "<span>Realse date: " + date + "</span><br/>" +
                                        "<span>Vote: " + result.VoteAverage + "</span><br/>" +
                                     "</div>" +
                                    "<div class='clearfix'> </div>" +
