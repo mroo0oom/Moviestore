@@ -50,3 +50,13 @@ C:/Users/erz-1/Desktop/Work/work_2_2018/TMDB/Website/bin/TMDbLib.pdb
 /Users/meme/Downloads/Website-1/obj/Debug/movies_project.csproj.CoreCompileInputs.cache
 /Users/meme/Downloads/Website-1/obj/Debug/movies_project.dll
 /Users/meme/Downloads/Website-1/obj/Debug/movies_project.pdb
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/bin/movies_project.dll
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/bin/movies_project.pdb
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/bin/Newtonsoft.Json.dll
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/bin/TMDbLib.dll
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/bin/Newtonsoft.Json.xml
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/bin/TMDbLib.pdb
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/obj/Debug/movies_project.csprojResolveAssemblyReference.cache
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/obj/Debug/movies_project.csproj.CoreCompileInputs.cache
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/obj/Debug/movies_project.dll
+/Users/meme/Desktop/Moviedb/Moviestore/Website-1/obj/Debug/movies_project.pdb

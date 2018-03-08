@@ -32,9 +32,11 @@ namespace movies_project
             str1 +=
                     "<img src='" + "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + movie.PosterPath + "' class='img-responsive' />";
 
-
-
-            str2 += "<h3 style='font-family: 'Arial';'>" + movie.Title + "</h3><p class='movie_option'><strong>Country: </strong>" + movie.ProductionCountries[0].Name + "</p>" +
+            string country = "";
+            if (movie.ProductionCountries.Count > 0)
+                country = movie.ProductionCountries[0].Name;
+            
+            str2 += "<h3 style='font-family: 'Arial';'>" + movie.Title + "</h3><p class='movie_option'><strong>Country: </strong>" + country + "</p>" +
                 "<p class='movie_option'><strong>Language:</strong > " + movie.OriginalLanguage + "</P>" +
             "<p class='movie_option'><strong>Spoken Language: </strong>";
             for (int i = 0; i < movie.SpokenLanguages.Count; i++)
