@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{8FB667BC-62EC-4719-876D-E6F3CFE1870D}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Source Not Available">
+    <Files>
+      <File FileName="Casts.aspx" Line="3" Column="1" />
+      <File FileName="Single.aspx" Line="1" Column="1" />
+      <File FileName="Single.aspx.cs" Line="157" Column="87" />
+      <File FileName="castSingle.aspx.cs" Line="41" Column="20" />
+      <File FileName="../../../../Library/Frameworks/Mono.framework/Versions/5.8.0/lib/mono/msbuild/15.0/bin/Microsoft.Common.CurrentVersion.targets" Line="2057" Column="5" />
+      <File FileName="Default.aspx" Line="1" Column="1" />
+      <File FileName="Favorite.aspx" Line="1" Column="1" />
+      <File FileName="packages.config" Line="1" Column="1" />
+      <File FileName="Source Not Available" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.movies__project PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>
