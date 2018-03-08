@@ -36,18 +36,9 @@ namespace movies_project
             string str1 = "";
             string str2 = "";
 
-            string image = "";
-            if (person.ProfilePath == null)
-            {
-                image = "https://www.w3schools.com/howto/img_avatar.png";
-            }
-            else
-            {
-                image = "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + person.ProfilePath;
-            }
 
             str1 += 
-                        "<img src='"+ image+"' class='img-responsive' />";
+                        "<img src='"+ "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + person.ProfilePath +"' class='img-responsive' />";
 
 
             string date = "";
