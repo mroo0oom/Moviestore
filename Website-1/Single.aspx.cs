@@ -101,12 +101,21 @@ namespace movies_project
 
                 foreach (TMDbLib.Objects.Movies.Cast result in results.Cast)
                 {
+                
+                 string image = "";
+                    if (result.ProfilePath == null)
+                    {
+                        image = "https://www.w3schools.com/howto/img_avatar.png";
+                    }
+                    else
+                    {
+                        image = "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + result.ProfilePath;
+                    }
                     if (i > 5)
                         break;
                     str += "<div class='col-md-3' style='margin:10px'>" +
                                 "<div class='card'>" +
-                        "  <img src = '" + "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + result.ProfilePath + "' alt='Avatar' style='width:100%'>" +
-                        "<div style='padding: 2px 16px;'>" +
+                        "  <img src = '" + image + "' alt='Avatar' style='width:100%'>" +"<div style='padding: 2px 16px;'>" +
                          "<h4><b>" + result.Name + "</b></h4>" +
                  "<p>" + result.Character + "</p>" +
                  "<a href='castSingle.aspx?person_id=" + result.Id + "'>See Detials</a>" +
