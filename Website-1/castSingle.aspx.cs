@@ -37,19 +37,17 @@ namespace movies_project
             string str2 = "";
 
 
-
-            string gender = "";
-            if (person.Gender.ToString() == "2")
-                gender = "Male";
-            else
-                gender = "Female";
+ string date = "";
+            if (person.Birthday != null)
+                date = person.Birthday.Value.ToString("D", CultureInfo.CreateSpecificCulture("en-US"));
+           
                 str1 += 
                         "<img src='"+ "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + person.ProfilePath +"' class='img-responsive' />";
 
 
 
             str2 += "<h3 style='font-family: 'Arial';'>" + person.Name + "</h3><p class='movie_option'><strong>Place_of_birth: </strong>" + person.PlaceOfBirth + "</p>" +
-                "<p class='movie_option'><strong>Birthday:</strong > " + person.Birthday.Value.ToString("D", CultureInfo.CreateSpecificCulture("en-US")) + "</P>"+
+                "<p class='movie_option'><strong>Birthday:</strong > " + date + "</P>"+
 
              "</P><p class='movie_option'><strong>Biography: </strong>" +person.Biography + "</p>";
             str2 += "<a href='" + "http://www.imdb.com/name/" + person.ImdbId + "'>Go IMDB Link</a>";
