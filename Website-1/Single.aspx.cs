@@ -28,10 +28,18 @@ namespace movies_project
             string str3 = "";
 
 
+ string image = "";
+            if (movie.PosterPath == null)
+            {
+                image = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP_gfN4auNNye--K2rquUrHBCrMl4QYedWLnLT14qSdT2AWPPo";
+            }
+            else
+            {
+                image = "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + movie.PosterPath;
+            }
 
             str1 +=
-                    "<img src='" + "https://image.tmdb.org/t/p/w185_and_h278_bestv2" + movie.PosterPath + "' class='img-responsive' />";
-
+                    "<img src='" + image+"' class='img-responsive' />";
             string country = "";
             if (movie.ProductionCountries.Count > 0)
                 country = movie.ProductionCountries[0].Name;
