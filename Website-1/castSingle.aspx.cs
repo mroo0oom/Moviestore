@@ -1,4 +1,4 @@
-﻿using movies_project.Class;
+using movies_project.Class;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -36,12 +36,7 @@ namespace movies_project
             string str1 = "";
             string str2 = "";
 
-
- string date = "";
-            if (person.Birthday != null)
-                date = person.Birthday.Value.ToString("D", CultureInfo.CreateSpecificCulture("en-US"));
-           
-             string image = "";
+            string image = "";
             if (person.ProfilePath == null)
             {
                 image = "https://www.w3schools.com/howto/img_avatar.png";
@@ -55,8 +50,11 @@ namespace movies_project
                         "<img src='"+ image+"' class='img-responsive' />";
 
 
+            string date = "";
+            if (person.Birthday != null)
+                date = person.Birthday.Value.ToString("D", CultureInfo.CreateSpecificCulture("en-US"));
 
-            str2 += "<h3 style='font-family: 'Arial';'>" + person.Name + "</h3><p class='movie_option'><strong>Place_of_birth: </strong>" + person.PlaceOfBirth + "</p>" +
+                str2 += "<h3 style='font-family: 'Arial';'>" + person.Name + "</h3><p class='movie_option'><strong>Place_of_birth: </strong>" + person.PlaceOfBirth + "</p>" +
                 "<p class='movie_option'><strong>Birthday:</strong > " + date + "</P>"+
 
              "</P><p class='movie_option'><strong>Biography: </strong>" +person.Biography + "</p>";
